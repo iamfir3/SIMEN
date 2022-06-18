@@ -1,0 +1,34 @@
+.pr-small{
+   padding-right:3.5rem;
+}
+
+.pr-tiny{
+   padding-right: 1rem;
+}
+
+.mr-small{
+   margin-right: 1rem;
+}
+.mb-tiny{
+   margin-bottom: 1rem;
+}
+.mb-medium{
+   margin-bottom: 5.5rem;
+}
+
+.active-flex{
+   display:flex !important;
+}
+
+.active-visi{
+   visibility:visible !important;
+   opacity: 1 !important;
+}
+
+.active-bef-aft-visi{
+   &::after,
+   &::before{
+      visibility:visible !important;
+      opacity: 1 !important;
+   }
+}

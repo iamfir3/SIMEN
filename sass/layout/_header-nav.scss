@@ -1,0 +1,120 @@
+.up-header{
+    height:4rem;
+    background-color: $color-black1;
+    font-size:1.15rem;
+    font-weight:400;
+
+    &__container{
+        display: flex;
+        margin: 0 auto;
+        max-width:117rem;
+        color:$color-gray1;
+        height:100%;
+        align-items:center;
+        justify-content: space-between;
+    }
+
+    &__left{
+        display: flex;
+        cursor:pointer;
+
+        & > *{
+            display: flex;
+            align-items:center;
+        }
+        .languages{
+            padding-right: 2.5rem;
+            border-right: 1.5px solid $color-gray2;
+            position: relative;
+
+            &::before{
+                content: "";
+                position: absolute;
+                top: 2px;
+                right: 0;
+                border:.5rem solid $color-gray1;
+                border-color: $color-gray1 transparent transparent transparent;
+                margin-right: .5rem;
+            }
+
+            img{
+                margin-right: .5rem;
+            }
+            
+            @include show-menu-small;
+        }
+    
+        .currency{
+            margin-left: 1.5rem;
+            position: relative;
+            &::before{
+                content: "";
+                position: absolute;
+                top: 2px;
+                right: -2rem;
+                border:.5rem solid $color-gray1;
+                border-color: $color-gray1 transparent transparent transparent;
+                margin-right: .5rem;
+            }
+
+            @include show-menu-tiny;
+        }
+    }
+
+    &__right{
+        display: flex;
+        height:100%;
+        
+        .my-account,
+        .wishlist,
+        .checkout,
+        .login{
+            @include borderlr;
+            padding: 0 2rem;
+            height:100%;
+            
+            a{
+                transition: color .5s;
+                align-items: center;
+                display: flex;
+                text-decoration: none;
+                color:$color-gray1;
+                height: 100%;
+            }
+            
+            a:hover p{
+                color:$color-red1;
+            }
+
+            p{
+                transition:color .5s;
+            }
+            
+            i{
+                margin-right: 1.3rem;
+            }
+        }
+
+        .my-account{
+
+        }
+    
+        .wishlist{
+
+        }
+    
+        .checkout{
+
+        }
+    
+        .login{
+
+        }
+    }
+}
+
+.down-header{
+    width:100%;
+    margin: 4rem auto;
+
+}

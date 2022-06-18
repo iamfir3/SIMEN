@@ -1,0 +1,61 @@
+.icon{
+    &-circle{
+        display: flex;
+        align-items: center;
+        
+        &__icon{
+            &__container{
+                background-color: $color-gray5;
+                position: relative;
+                width:4rem;
+                height:4rem;
+                display:flex;
+                justify-content: center;
+                align-items: center;
+                color:$color-gray6;
+                border-radius:50%;
+                font-size:1.3rem;
+                margin-right: 1.3rem;
+                z-index: 100;
+                overflow: hidden;
+                transition: all .5s;
+
+                &__effect{
+                    position: absolute;
+                    top: 4rem;
+                    left: 0;
+                    height:100%;
+                    width: 100%;
+                    background-color:$color-red1;
+                    z-index: 50;
+                    transition: all .3s ease-in-out;
+                }
+
+                i{
+                    z-index: 100;
+                }
+
+            }
+        }
+
+        &:hover .icon-circle__icon__container__effect{
+            top: 0;
+        }
+        &:hover .icon-circle__icon__container {
+            color:white;
+        }
+
+    }
+
+    &-detail{
+       font-size:1.4rem;
+       color:$color-gray7;
+
+       p:first-child{
+        text-transform: uppercase;
+       }
+       p:last-child{
+        font-size:1.2rem;
+       }
+    }
+}

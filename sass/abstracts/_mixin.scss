@@ -1,0 +1,121 @@
+@mixin borderlr {
+    border-left: 1px solid $color-gray2;
+    border-right: 1px solid $color-gray2;
+}
+
+@mixin arr-start{
+    content: "";
+    position:absolute;
+    top: -1.4rem;
+    left: 1rem;
+    border:.7rem solid $color-gray1;
+    border-color: transparent transparent white transparent;
+}
+
+@mixin arr-start-border{
+    &::after,&::before{
+        content: "";
+        position:absolute;
+        top: -1.8rem;
+        left: 1rem;
+        width:1.5rem;
+        height:1.5rem;
+        transform:rotate(45deg);
+        border:1px solid $color-gray9;
+        z-index: -1;
+    }
+
+    &::after{
+        background-color:white;
+        top: -1.7rem;
+        left: 1rem;
+        border:none;
+    }
+}
+
+@mixin bridge{
+        content: "";
+        top: 1rem;
+        left: 0;
+        height: 3rem;
+        width: 100%;
+        position:absolute;
+}
+
+@mixin show-menu-small{
+    &::after{
+        @include bridge;
+        
+        &:hover .menu-show--small{
+            display: block;
+        }
+    }
+    &:hover .menu-show--small{
+        display: block;
+    }
+    &:hover .menu-show--small .menu-show--small__item{
+        transform: translateY(0);
+    }
+}
+@mixin show-menu-tiny{
+    &::after{
+        @include bridge;
+        
+        &:hover .menu-show--tiny{
+            display: block;
+        }
+    }
+    &:hover .menu-show--tiny{
+        display: block;
+    }
+    &:hover .menu-show--tiny .menu-show--tiny__item{
+        transform: translateY(0);
+    }
+}
+@mixin show-menu-medium{
+    &::after{
+        @include bridge;
+        
+        &:hover .menu-show--medium{
+            display: block;
+        }
+    }
+    &:hover .menu-show--medium{
+        display: block;
+    }
+    &:hover .menu-show--medium .menu-show--medium__item{
+        transform: translateY(0);
+    }
+}
+@mixin show-menu-large{
+    &::after{
+        @include bridge;
+        
+        &:hover .menu-show--large{
+            display: block;
+        }
+    }
+    &:hover .menu-show--large{
+        display: block;
+    }
+    &:hover .menu-show--large .menu-show--large__item{
+        transform: translateY(0);
+    }
+}
+
+@mixin clearfix {
+    &::after{
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+@mixin black-hover {
+    transition: all .5s;
+
+    &:hover{
+        filter: brightness(0.6);
+        opacity: .9;
+    }
+}

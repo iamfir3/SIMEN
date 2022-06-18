@@ -1,0 +1,9 @@
+@keyframes moveIn3times{
+    from {
+        transform:translateX(.5rem);
+    }
+
+    to {
+        transform:translateX(0);
+    }
+}

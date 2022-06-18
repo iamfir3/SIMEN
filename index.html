@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+       <div class="up-header">
+           <div class="up-header__container">
+               <div class="up-header__left">
+                    <div class="languages">
+                        <img src="http://demo.snstheme.com/wp/simen/wp-content/themes/snssimen/assets/img/en.jpg" alt="">
+                        <p>English</p>
+                        <div class="menu-show--small">
+                            <ul class="menu-show--small__list">
+                                <li class="menu-show--small__item">
+                                    <img src="http://demo.snstheme.com/wp/simen/wp-content/themes/snssimen/assets/img/en.jpg" alt="">
+                                    <p>English</p>
+                                </li>
+                                <li class="menu-show--small__item">
+                                    <img src="http://demo.snstheme.com/wp/simen/wp-content/themes/snssimen/assets/img/bra.jpg" alt="">
+                                    <p>Russian</p>
+                                </li>
+                                <li class="menu-show--small__item">
+                                    <img src="http://demo.snstheme.com/wp/simen/wp-content/themes/snssimen/assets/img/ru.jpg" alt="">
+                                    <p>Brazil</p>
+                                </li>
+                                <li class="menu-show--small__item">
+                                    <img src="http://demo.snstheme.com/wp/simen/wp-content/themes/snssimen/assets/img/fr.jpg" alt="">
+                                    <p>France</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="currency">
+                        <p>USD</p>
+
+                        <div class="menu-show--tiny">
+                            <div class="menu-show--tiny__list">
+                                <li class="menu-show--tiny__item">
+                                    <p>USD</p>
+                                </li>
+                                <li class="menu-show--tiny__item">
+                                    <p>EUR</p>
+                                </li>
+                            </div>
+                        </div>
+                    </div>
+               </div>
+   
+               <div class="up-header__right">
+                    <div class="my-account">
+                        <a href="#">
+                            <i class="fas fa-user"></i>
+                            <p>My Account</p>
+                        </a>
+                    </div>
+
+                    <div class="wishlist">
+                        <a href="#">
+                            <i class="far fa-heart"></i>
+                            <p>Wishlist</p>
+                        </a>
+                    </div>
+                    
+                    <div class="checkout">
+                        <a href="#">
+                            <i class="far fa-check-square"></i>
+                            <p>Checkout</p>
+                        </a>
+                    </div>
+
+                    <div class="login">
+                        <a href="">
+                            <i class="fas fa-key"></i>
+                            <p>Login</p>
+                        </a>
+                    </div>
+               </div>
+           </div>
+       </div>
+
+       <div class="down-header">
+            <div class="row">
+                <div class="col-1-of-4">
+                    <img src="http://demo.snstheme.com/wp/simen/wp-content/themes/snssimen/assets/img/logo.png" alt="logo">
+                </div>
+                <div class="col-3-of-4">
+                    <div class="row">
+                        <div class="col-1-of-3">
+                            <div class="icon-circle">
+                                <div class="icon-circle__icon__container">
+                                    <i class="fas fa-truck icon-circle__icon"></i>
+                                    <div class="icon-circle__icon__container__effect"></div>
+                                </div>
+                                <div class="icon-detail">
+                                    <p>Free delivery worldwide</p>
+                                    <p>On order over 100$</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-1-of-3">
+                            <div class="icon-circle">
+                                <div class="icon-circle__icon__container">
+                                    <i class="fas fa-cloud-upload-alt icon-circle__icon"></i>
+                                    <div class="icon-circle__icon__container__effect"></div>
+                                </div>
+                                <div class="icon-detail">
+                                    <p>Up to 20% off cosy layers</p>
+                                    <p>Lorem ipsum dolor sit amet</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-1-of-3">
+                            <div class="icon-circle">
+                                <div class="icon-circle__icon__container">
+                                    <i class="fas fa-gift icon-circle__icon"></i>
+                                    <div class="icon-circle__icon__container__effect"></div>
+                                </div>
+                                <div class="icon-detail">
+                                    <p>Buy 1 get 1 free</p>
+                                    <p>On order over $100</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+       </div>
+    </header>
+    <main class="main">
+        <section class="category row">
+            <div class="category-search-form-container">
+                <input type="text" class="category-search-input" placeholder="Search entire store here">
+                <button class="category-search-btn">Search</button>
+            </div>
+            <div class="category__left">
+                <div class="category__item category--active pr-small">
+                    <p class="category__text">home</p>
+                    <div class="menu-show--medium">
+                        <div class="menu-show--medium__list">
+                            <div class="menu-show--medium__item">Home page 1</div>
+                            <div class="menu-show--medium__item">Home page 2</div>
+                            <div class="menu-show--medium__item">Home page 3</div>
+                            <div class="menu-show--medium__item">Home page 4</div>
+                            <div class="menu-show--medium__item">Home page 5</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="category__item pr-small">
+                    <p class="category__text">furniture</p>
+                    <div class="row menu-show--large">
+
+                    </div>
+                </div>
+
+                <div class="category__item pr-small">
+                    <p class="category__text">coffee tables</p>
+                </div>
+                <div class="category__item pr-small">
+                    <p class="category__text">sofas</p>
+                </div>
+
+                <div class="category__item pr-small">
+                    <p class="category__text">bedroom furniture</p>
+                </div>
+
+                <div class="category__item pr-small">
+                    <p class="category__text">shop</p>
+                </div>
+                
+                <div class="category__item pr-small">
+                    <p class="category__text">blog</p>
+                    <div class="menu-show--medium">
+                        <div class="menu-show--medium__list">
+                            <div class="menu-show--medium__item">Blog fullwidth</div>
+                            <div class="menu-show--medium__item">Blog fullwidth 2 columns</div>
+                            <div class="menu-show--medium__item">Blog fullwidth 3 columns</div>
+                            <div class="menu-show--medium__item">Blog Masonry</div>
+                            <div class="menu-show--medium__item">Blog left sidebar</div>
+                            <div class="menu-show--medium__item">Blog right sidebar</div>
+                            <div class="menu-show--medium__item">Blog right sidebar</div>
+                            <div class="menu-show--medium__item">Single post</div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="category__item pr-small">
+                    <p class="category__text">shortcodes</p>
+                </div>
+
+                <div class="category__item pr-small">
+                    <p class="category__text">contact us</ơ>
+                </div>
+            </div>
+            <div class="category__right">
+                <i class="fas fa-search category__search__icon"></i>
+                <i class="fas fa-shopping-cart category__cart"></i>
+                <p class="category__amount">0</p>
+                <p class="category__des">(items)</p>
+            </div>
+        </section>
+
+        <section class="pic-part1">
+            <div class="pic-part1__container row">
+                <div class="pic-part1__wrapper--pic1">
+                    
+                    <img src="http://demo.snstheme.com/wp/simen/wp-content/uploads/2015/11/2.png" alt="" class="pic-part1__pic1">
+                </div>
+                
+                <div class="pic-part1__wrapper--pic2">
+                    <div class="pic-part1__bg-trans--1"></div>
+                    <img src="http://demo.snstheme.com/wp/simen/wp-content/uploads/2011/05/5.png" alt="" class="pic-part1__pic2">
+
+                </div>
+
+                <div class="pic-part1__wrapper--pic3">
+                    <div class="pic-part1__bg-trans--2"></div>
+                    <img src="http://demo.snstheme.com/wp/simen/wp-content/uploads/2015/11/banner1-300x286.jpg" alt="" class="pic-part1__pic3">
+                    
+                </div>
+                
+                <div class="pic-part1__wrapper--pic4">
+                    <div class="pic-part1__bg-trans--3"></div>
+                    <img src="http://demo.snstheme.com/wp/simen/wp-content/uploads/2015/11/banner2-300x286.jpg" alt="" class="pic-part1__pic4">
+                </div>
+            </div>
+        </section>
+
+        <section class="feature-bar">
+            <div class="row feature-bar__title">
+                <h3 class="feature-bar__title-text active-bef-aft-visi pr-tiny ">latest</h3>
+                <h3 class="feature-bar__title-text">best seller</h3>
+                <h3 class="feature-bar__title-text pr-tiny">featured</h3>
+            </div>
+
+            <div class="row feature-bar__container"> 
+                <div class="feature-bar__latest__container active-flex">
+                    <div class="feature-bar__item">
+                        <div class="feature-bar__box">
+                            <span class="feature-bar__box-onsale">Sale!</span>
+                            <img src="http://demo.snstheme.com/wp/simen/wp-content/uploads/2015/11/17-215x260.jpg" alt="" class="feature-bar__box-img">
+                            <div class="feature-bar__box-atc">
+                                <i class="fas fa-shopping-cart feature-bar__box-atc-icon"></i>
+                                <span class="feature-bar__box-atc-text">add to cart</span>
+                            </div>
+                            <div class="feature-bar__box-cta">
+                                <i class="fas fa-heart feature-bar__box-cta-icon feature-bar__box-cta-icon--heart"></i>
+                                <i class="fas fa-random feature-bar__box-cta-icon feature-bar__box-cta-icon--random"></i>
+                                <i class="fas fa-eye feature-bar__box-cta-icon feature-bar__box-cta-icon--eye"></i>
+                            </div>
+                        </div>
+                        <div class="feature-bar__box-cta-icon--heart-text">Add to Wishlist</div>
+                        <div class="feature-bar__box-cta-icon--random-text">Compare</div>
+                        <div class="feature-bar__box-cta-icon--eye-text">Quickview</div>
+
+                        <h4 class="feature-bar__item-name">Modular Modern</h4>
+
+                        <div class="feature-bar__item-price">
+                            <span class="feature-bar__item-price--before">$ 9.00</span>
+                            <span class="feature-bar__item-price--now">$ 7.00</span>
+                        </div>
+
+                        <div class="feature-bar__item-stars">
+                            <i class="far fa-star star-icon"></i>
+                            <i class="far fa-star star-icon"></i>
+                            <i class="far fa-star star-icon"></i>
+                            <i class="far fa-star star-icon"></i>
+                            <i class="far fa-star star-icon"></i>
+                        </div>
+                    </div>
+                    <div class="feature-bar__item">
+                        <div class="feature-bar__box">
+                            <img src="http://demo.snstheme.com/wp/simen/wp-content/uploads/2015/11/26-215x260.jpg" alt="" class="feature-bar__box-img">
+                            <div class="feature-bar__box-atc">
+                                <i class="fas fa-shopping-cart feature-bar__box-atc-icon"></i>
+                                <span class="feature-bar__box-atc-text">add to cart</span>
+                            </div>
+                            <div class="feature-bar__box-cta">
+                                <i class="fas fa-heart feature-bar__box-cta-icon feature-bar__box-cta-icon--heart"></i>
+                                <i class="fas fa-random feature-bar__box-cta-icon feature-bar__box-cta-icon--random"></i>
+                                <i class="fas fa-eye feature-bar__box-cta-icon feature-bar__box-cta-icon--eye"></i>
+                            </div>
+                        </div>
+
+                        <div class="feature-bar__box-cta-icon--heart-text">Add to Wishlist</div>
+                        <div class="feature-bar__box-cta-icon--random-text">Compare</div>
+                        <div class="feature-bar__box-cta-icon--eye-text">Quickview</div>
+
+                        <h4 class="feature-bar__item-name">Modular Modern</h4>
+
+                        <div class="feature-bar__item-price">
+                            <span class="feature-bar__item-price--now">$ 10.00</span>
+                        </div>
+
+                        <div class="feature-bar__item-stars">
+                            <i class="fas fa-star star-icon star-icon--yellow"></i>
+                            <i class="fas fa-star star-icon star-icon--yellow"></i>
+                            <i class="fas fa-star star-icon star-icon--yellow"></i>
+                            <i class="fas fa-star star-icon star-icon--yellow"></i>
+                            <i class="far fa-star star-icon"></i>
+                        </div>
+                    </div>
+
+                    <div class="feature-bar__item">
+                        <div class="feature-bar__box">
+                            <span class="feature-bar__box-onsale">Sale!</span>
+                            <img src="	http://demo.snstheme.com/wp/simen/wp-content/uploads/2015/11/10-215x260.jpg" alt="" class="feature-bar__box-img">
+                            <div class="feature-bar__box-atc">
+                                <i class="fas fa-shopping-cart feature-bar__box-atc-icon"></i>
+                                <span class="feature-bar__box-atc-text">add to cart</span>
+                            </div>
+                            <div class="feature-bar__box-cta">
+                                <i class="fas fa-heart feature-bar__box-cta-icon feature-bar__box-cta-icon--heart"></i>
+                                <i class="fas fa-random feature-bar__box-cta-icon feature-bar__box-cta-icon--random"></i>
+                                <i class="fas fa-eye feature-bar__box-cta-icon feature-bar__box-cta-icon--eye"></i>
+                            </div>
+                        </div>
+
+                        <div class="feature-bar__box-cta-icon--heart-text">Add to Wishlist</div>
+                        <div class="feature-bar__box-cta-icon--random-text">Compare</div>
+                        <div class="feature-bar__box-cta-icon--eye-text">Quickview</div>
+
+                        <h4 class="feature-bar__item-name">Modular Modern</h4>
+
+                        <div class="feature-bar__item-price">
+                            <span class="feature-bar__item-price--before">$ 3.00</span>
+                            <span class="feature-bar__item-price--now">$ 2.00</span>
+                        </div>
+
+                        <div class="feature-bar__item-stars">
+                            <i class="far fa-star star-icon"></i>
+                            <i class="far fa-star star-icon"></i>
+                            <i class="far fa-star star-icon"></i>
+                            <i class="far fa-star star-icon"></i>
+                            <i class="far fa-star star-icon"></i>
+                        </div>
+                    </div>
+                    <div class="feature-bar__item">
+                        <div class="feature-bar__box">
+                            <img src="	http://demo.snstheme.com/wp/simen/wp-content/uploads/2015/11/24-215x260.jpg" alt="" class="feature-bar__box-img">
+                            <div class="feature-bar__box-atc">
+                                <i class="fas fa-shopping-cart feature-bar__box-atc-icon"></i>
+                                <span class="feature-bar__box-atc-text">add to cart</span>
+                            </div>
+                            <div class="feature-bar__box-cta">
+                                <i class="fas fa-heart feature-bar__box-cta-icon feature-bar__box-cta-icon--heart"></i>
+                                <i class="fas fa-random feature-bar__box-cta-icon feature-bar__box-cta-icon--random"></i>
+                                <i class="fas fa-eye feature-bar__box-cta-icon feature-bar__box-cta-icon--eye"></i>
+                            </div>
+                        </div>
+
+                        <div class="feature-bar__box-cta-icon--heart-text">Add to Wishlist</div>
+                        <div class="feature-bar__box-cta-icon--random-text">Compare</div>
+                        <div class="feature-bar__box-cta-icon--eye-text">Quickview</div>
+
+                        <h4 class="feature-bar__item-name">Modular Modern</h4>
+
+                        <div class="feature-bar__item-price">
+                            <span class="feature-bar__item-price--now">$ 13.00</span>
+                        </div>
+
+                        <div class="feature-bar__item-stars">
+                            <i class="far fa-star star-icon"></i>
+                            <i class="far fa-star star-icon"></i>
+                            <i class="far fa-star star-icon"></i>
+                            <i class="far fa-star star-icon"></i>
+                            <i class="far fa-star star-icon"></i>
+                        </div>
+                    </div>
+                    <div class="feature-bar__item">
+                        <div class="feature-bar__box">
+                            
+                            <img src="	http://demo.snstheme.com/wp/simen/wp-content/uploads/2015/11/3-215x260.jpg" alt="" class="feature-bar__box-img">
+                            <div class="feature-bar__box-atc">
+                                <i class="fas fa-shopping-cart feature-bar__box-atc-icon"></i>
+                                <span class="feature-bar__box-atc-text">add to cart</span>
+                            </div>
+                            <div class="feature-bar__box-cta">
+                                <i class="fas fa-heart feature-bar__box-cta-icon feature-bar__box-cta-icon--heart"></i>
+                                <i class="fas fa-random feature-bar__box-cta-icon feature-bar__box-cta-icon--random"></i>
+                                <i class="fas fa-eye feature-bar__box-cta-icon feature-bar__box-cta-icon--eye"></i>
+                            </div>
+                        </div>
+
+                        <div class="feature-bar__box-cta-icon--heart-text">Add to Wishlist</div>
+                        <div class="feature-bar__box-cta-icon--random-text">Compare</div>
+                        <div class="feature-bar__box-cta-icon--eye-text">Quickview</div>
+
+                        <h4 class="feature-bar__item-name">Modular Modern</h4>
+
+                        <div class="feature-bar__item-price">
+                            
+                            <span class="feature-bar__item-price--now">$ 14.00</span>
+                        </div>
+
+                        <div class="feature-bar__item-stars">
+                            <i class="far fa-star star-icon"></i>
+                            <i class="far fa-star star-icon"></i>
+                            <i class="far fa-star star-icon"></i>
+                            <i class="far fa-star star-icon"></i>
+                            <i class="far fa-star star-icon"></i>
+                        </div>
+                    </div>
+                   
+                </div>
+                <div class="feature-bar__best-seller__container">
+                    <div class="feature-bar__item">
+                        <div class="feature-bar__box">
+                            <span class="feature-bar__box-onsale">Sale!</span>
+                            <img src="http://demo.snstheme.com/wp/simen/wp-content/uploads/2015/11/15-215x260.jpg" alt="" class="feature-bar__box-img">
+                            <div class="feature-bar__box-atc">
+                                <i class="fas fa-shopping-cart feature-bar__box-atc-icon"></i>
+                                <span class="feature-bar__box-atc-text">add to cart</span>
+                            </div>
+                            <div class="feature-bar__box-cta">
+                                <i class="fas fa-heart feature-bar__box-cta-icon feature-bar__box-cta-icon--heart"></i>
+                                <i class="fas fa-random feature-bar__box-cta-icon feature-bar__box-cta-icon--random"></i>
+                                <i class="fas fa-eye feature-bar__box-cta-icon feature-bar__box-cta-icon--eye"></i>
+                            </div>
+                        </div>
+                        <div class="feature-bar__box-cta-icon--heart-text">Add to Wishlist</div>
+                        <div class="feature-bar__box-cta-icon--random-text">Compare</div>
+                        <div class="feature-bar__box-cta-icon--eye-text">Quickview</div>
+
+                        <h4 class="feature-bar__item-name">Modular Modern</h4>
+
+                        <div class="feature-bar__item-price">
+                            <span class="feature-bar__item-price--before">$ 9.00</span>
+                            <span class="feature-bar__item-price--now">$ 7.00</span>
+                        </div>
+
+                        <div class="feature-bar__item-stars">
+                            <i class="far fa-star star-icon"></i>
+                            <i class="far fa-star star-icon"></i>
+                            <i class="far fa-star star-icon"></i>
+                            <i class="far fa-star star-icon"></i>
+                            <i class="far fa-star star-icon"></i>
+                        </div>
+                    </div>
+                    <div class="feature-bar__item">
+                        <div class="feature-bar__box">
+                            <img src="http://demo.snstheme.com/wp/simen/wp-content/uploads/2015/11/17-215x260.jpg" alt="" class="feature-bar__box-img">
+                            <div class="feature-bar__box-atc">
+                                <i class="fas fa-shopping-cart feature-bar__box-atc-icon"></i>
+                                <span class="feature-bar__box-atc-text">add to cart</span>
+                            </div>
+                            <div class="feature-bar__box-cta">
+                                <i class="fas fa-heart feature-bar__box-cta-icon feature-bar__box-cta-icon--heart"></i>
+                                <i class="fas fa-random feature-bar__box-cta-icon feature-bar__box-cta-icon--random"></i>
+                                <i class="fas fa-eye feature-bar__box-cta-icon feature-bar__box-cta-icon--eye"></i>
+                            </div>
+                        </div>
+
+                        <div class="feature-bar__box-cta-icon--heart-text">Add to Wishlist</div>
+                        <div class="feature-bar__box-cta-icon--random-text">Compare</div>
+                        <div class="feature-bar__box-cta-icon--eye-text">Quickview</div>
+
+                        <h4 class="feature-bar__item-name">Modular Modern</h4>
+
+                        <div class="feature-bar__item-price">
+                            <span class="feature-bar__item-price--now">$ 10.00</span>
+                        </div>
+
+                        <div class="feature-bar__item-stars">
+                            <i class="fas fa-star star-icon star-icon--yellow"></i>
+                            <i class="fas fa-star star-icon star-icon--yellow"></i>
+                            <i class="fas fa-star star-icon star-icon--yellow"></i>
+                            <i class="fas fa-star star-icon star-icon--yellow"></i>
+                            <i class="far fa-star star-icon"></i>
+                        </div>
+                    </div>
+
+                    <div class="feature-bar__item">
+                        <div class="feature-bar__box">
+                            <span class="feature-bar__box-onsale">Sale!</span>
+                            <img src="	http://demo.snstheme.com/wp/simen/wp-content/uploads/2015/11/10-215x260.jpg" alt="" class="feature-bar__box-img">
+                            <div class="feature-bar__box-atc">
+                                <i class="fas fa-shopping-cart feature-bar__box-atc-icon"></i>
+                                <span class="feature-bar__box-atc-text">add to cart</span>
+                            </div>
+                            <div class="feature-bar__box-cta">
+                                <i class="fas fa-heart feature-bar__box-cta-icon feature-bar__box-cta-icon--heart"></i>
+                                <i class="fas fa-random feature-bar__box-cta-icon feature-bar__box-cta-icon--random"></i>
+                                <i class="fas fa-eye feature-bar__box-cta-icon feature-bar__box-cta-icon--eye"></i>
+                            </div>
+                        </div>
+
+                        <div class="feature-bar__box-cta-icon--heart-text">Add to Wishlist</div>
+                        <div class="feature-bar__box-cta-icon--random-text">Compare</div>
+                        <div class="feature-bar__box-cta-icon--eye-text">Quickview</div>
+
+                        <h4 class="feature-bar__item-name">Modular Modern</h4>
+
+                        <div class="feature-bar__item-price">
+                            <span class="feature-bar__item-price--before">$ 3.00</span>
+                            <span class="feature-bar__item-price--now">$ 2.00</span>
+                        </div>
+
+                        <div class="feature-bar__item-stars">
+                            <i class="far fa-star star-icon"></i>
+                            <i class="far fa-star star-icon"></i>
+                            <i class="far fa-star star-icon"></i>
+                            <i class="far fa-star star-icon"></i>
+                            <i class="far fa-star star-icon"></i>
+                        </div>
+                    </div>
+                    <div class="feature-bar__item">
+                        <div class="feature-bar__box">
+                            <img src="	http://demo.snstheme.com/wp/simen/wp-content/uploads/2015/11/28-215x260.jpg" alt="" class="feature-bar__box-img">
+                            <div class="feature-bar__box-atc">
+                                <i class="fas fa-shopping-cart feature-bar__box-atc-icon"></i>
+                                <span class="feature-bar__box-atc-text">add to cart</span>
+                            </div>
+                            <div class="feature-bar__box-cta">
+                                <i class="fas fa-heart feature-bar__box-cta-icon feature-bar__box-cta-icon--heart"></i>
+                                <i class="fas fa-random feature-bar__box-cta-icon feature-bar__box-cta-icon--random"></i>
+                                <i class="fas fa-eye feature-bar__box-cta-icon feature-bar__box-cta-icon--eye"></i>
+                            </div>
+                        </div>
+
+                        <div class="feature-bar__box-cta-icon--heart-text">Add to Wishlist</div>
+                        <div class="feature-bar__box-cta-icon--random-text">Compare</div>
+                        <div class="feature-bar__box-cta-icon--eye-text">Quickview</div>
+
+                        <h4 class="feature-bar__item-name">Modular Modern</h4>
+
+                        <div class="feature-bar__item-price">
+                            <span class="feature-bar__item-price--now">$ 13.00</span>
+                        </div>
+
+                        <div class="feature-bar__item-stars">
+                            <i class="far fa-star star-icon"></i>
+                            <i class="far fa-star star-icon"></i>
+                            <i class="far fa-star star-icon"></i>
+                            <i class="far fa-star star-icon"></i>
+                            <i class="far fa-star star-icon"></i>
+                        </div>
+                    </div>
+                    <div class="feature-bar__item">
+                        <div class="feature-bar__box">
+                            
+                            <img src="	http://demo.snstheme.com/wp/simen/wp-content/uploads/2015/11/26-215x260.jpg" alt="" class="feature-bar__box-img">
+                            <div class="feature-bar__box-atc">
+                                <i class="fas fa-shopping-cart feature-bar__box-atc-icon"></i>
+                                <span class="feature-bar__box-atc-text">add to cart</span>
+                            </div>
+                            <div class="feature-bar__box-cta">
+                                <i class="fas fa-heart feature-bar__box-cta-icon feature-bar__box-cta-icon--heart"></i>
+                                <i class="fas fa-random feature-bar__box-cta-icon feature-bar__box-cta-icon--random"></i>
+                                <i class="fas fa-eye feature-bar__box-cta-icon feature-bar__box-cta-icon--eye"></i>
+                            </div>
+                        </div>
+
+                        <div class="feature-bar__box-cta-icon--heart-text">Add to Wishlist</div>
+                        <div class="feature-bar__box-cta-icon--random-text">Compare</div>
+                        <div class="feature-bar__box-cta-icon--eye-text">Quickview</div>
+
+                        <h4 class="feature-bar__item-name">Modular Modern</h4>
+
+                        <div class="feature-bar__item-price">
+                            
+                            <span class="feature-bar__item-price--now">$ 14.00</span>
+                        </div>
+
+                        <div class="feature-bar__item-stars">
+                            <i class="far fa-star star-icon"></i>
+                            <i class="far fa-star star-icon"></i>
+                            <i class="far fa-star star-icon"></i>
+                            <i class="far fa-star star-icon"></i>
+                            <i class="far fa-star star-icon"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="feature-bar__featured__container">
+                    <div class="feature-bar__item">
+                        <div class="feature-bar__box">
+                            <span class="feature-bar__box-onsale">Sale!</span>
+                            <img src="http://demo.snstheme.com/wp/simen/wp-content/uploads/2015/11/10-215x260.jpg" alt="" class="feature-bar__box-img">
+                            <div class="feature-bar__box-atc">
+                                <i class="fas fa-shopping-cart feature-bar__box-atc-icon"></i>
+                                <span class="feature-bar__box-atc-text">add to cart</span>
+                            </div>
+                            <div class="feature-bar__box-cta">
+                                <i class="fas fa-heart feature-bar__box-cta-icon feature-bar__box-cta-icon--heart"></i>
+                                <i class="fas fa-random feature-bar__box-cta-icon feature-bar__box-cta-icon--random"></i>
+                                <i class="fas fa-eye feature-bar__box-cta-icon feature-bar__box-cta-icon--eye"></i>
+                            </div>
+                        </div>
+                        <div class="feature-bar__box-cta-icon--heart-text">Add to Wishlist</div>
+                        <div class="feature-bar__box-cta-icon--random-text">Compare</div>
+                        <div class="feature-bar__box-cta-icon--eye-text">Quickview</div>
+
+                        <h4 class="feature-bar__item-name">Modular Modern</h4>
+
+                        <div class="feature-bar__item-price">
+                            <span class="feature-bar__item-price--before">$ 9.00</span>
+                            <span class="feature-bar__item-price--now">$ 7.00</span>
+                        </div>
+
+                        <div class="feature-bar__item-stars">
+                            <i class="far fa-star star-icon"></i>
+                            <i class="far fa-star star-icon"></i>
+                            <i class="far fa-star star-icon"></i>
+                            <i class="far fa-star star-icon"></i>
+                            <i class="far fa-star star-icon"></i>
+                        </div>
+                    </div>
+                    <div class="feature-bar__item">
+                        <div class="feature-bar__box">
+                            <img src="	http://demo.snstheme.com/wp/simen/wp-content/uploads/2015/11/26-215x260.jpg" alt="" class="feature-bar__box-img">
+                            <div class="feature-bar__box-atc">
+                                <i class="fas fa-shopping-cart feature-bar__box-atc-icon"></i>
+                                <span class="feature-bar__box-atc-text">add to cart</span>
+                            </div>
+                            <div class="feature-bar__box-cta">
+                                <i class="fas fa-heart feature-bar__box-cta-icon feature-bar__box-cta-icon--heart"></i>
+                                <i class="fas fa-random feature-bar__box-cta-icon feature-bar__box-cta-icon--random"></i>
+                                <i class="fas fa-eye feature-bar__box-cta-icon feature-bar__box-cta-icon--eye"></i>
+                            </div>
+                        </div>
+
+                        <div class="feature-bar__box-cta-icon--heart-text">Add to Wishlist</div>
+                        <div class="feature-bar__box-cta-icon--random-text">Compare</div>
+                        <div class="feature-bar__box-cta-icon--eye-text">Quickview</div>
+
+                        <h4 class="feature-bar__item-name">Modular Modern</h4>
+
+                        <div class="feature-bar__item-price">
+                            <span class="feature-bar__item-price--now">$ 10.00</span>
+                        </div>
+
+                        <div class="feature-bar__item-stars">
+                            <i class="fas fa-star star-icon star-icon--yellow"></i>
+                            <i class="fas fa-star star-icon star-icon--yellow"></i>
+                            <i class="fas fa-star star-icon star-icon--yellow"></i>
+                            <i class="fas fa-star star-icon star-icon--yellow"></i>
+                            <i class="far fa-star star-icon"></i>
+                        </div>
+                    </div>
+
+                    <div class="feature-bar__item">
+                        <div class="feature-bar__box">
+                            <span class="feature-bar__box-onsale">Sale!</span>
+                            <img src="	http://demo.snstheme.com/wp/simen/wp-content/uploads/2015/11/10-215x260.jpg" alt="" class="feature-bar__box-img">
+                            <div class="feature-bar__box-atc">
+                                <i class="fas fa-shopping-cart feature-bar__box-atc-icon"></i>
+                                <span class="feature-bar__box-atc-text">add to cart</span>
+                            </div>
+                            <div class="feature-bar__box-cta">
+                                <i class="fas fa-heart feature-bar__box-cta-icon feature-bar__box-cta-icon--heart"></i>
+                                <i class="fas fa-random feature-bar__box-cta-icon feature-bar__box-cta-icon--random"></i>
+                                <i class="fas fa-eye feature-bar__box-cta-icon feature-bar__box-cta-icon--eye"></i>
+                            </div>
+                        </div>
+
+                        <div class="feature-bar__box-cta-icon--heart-text">Add to Wishlist</div>
+                        <div class="feature-bar__box-cta-icon--random-text">Compare</div>
+                        <div class="feature-bar__box-cta-icon--eye-text">Quickview</div>
+
+                        <h4 class="feature-bar__item-name">Modular Modern</h4>
+
+                        <div class="feature-bar__item-price">
+                            <span class="feature-bar__item-price--before">$ 3.00</span>
+                            <span class="feature-bar__item-price--now">$ 2.00</span>
+                        </div>
+
+                        <div class="feature-bar__item-stars">
+                            <i class="far fa-star star-icon"></i>
+                            <i class="far fa-star star-icon"></i>
+                            <i class="far fa-star star-icon"></i>
+                            <i class="far fa-star star-icon"></i>
+                            <i class="far fa-star star-icon"></i>
+                        </div>
+                    </div>
+                    <div class="feature-bar__item">
+                        <div class="feature-bar__box">
+                            <img src="	http://demo.snstheme.com/wp/simen/wp-content/uploads/2015/11/24-215x260.jpg" alt="" class="feature-bar__box-img">
+                            <div class="feature-bar__box-atc">
+                                <i class="fas fa-shopping-cart feature-bar__box-atc-icon"></i>
+                                <span class="feature-bar__box-atc-text">add to cart</span>
+                            </div>
+                            <div class="feature-bar__box-cta">
+                                <i class="fas fa-heart feature-bar__box-cta-icon feature-bar__box-cta-icon--heart"></i>
+                                <i class="fas fa-random feature-bar__box-cta-icon feature-bar__box-cta-icon--random"></i>
+                                <i class="fas fa-eye feature-bar__box-cta-icon feature-bar__box-cta-icon--eye"></i>
+                            </div>
+                        </div>
+
+                        <div class="feature-bar__box-cta-icon--heart-text">Add to Wishlist</div>
+                        <div class="feature-bar__box-cta-icon--random-text">Compare</div>
+                        <div class="feature-bar__box-cta-icon--eye-text">Quickview</div>
+
+                        <h4 class="feature-bar__item-name">Modular Modern</h4>
+
+                        <div class="feature-bar__item-price">
+                            <span class="feature-bar__item-price--now">$ 13.00</span>
+                        </div>
+
+                        <div class="feature-bar__item-stars">
+                            <i class="far fa-star star-icon"></i>
+                            <i class="far fa-star star-icon"></i>
+                            <i class="far fa-star star-icon"></i>
+                            <i class="far fa-star star-icon"></i>
+                            <i class="far fa-star star-icon"></i>
+                        </div>
+                    </div>
+                    <div class="feature-bar__item">
+                        <div class="feature-bar__box">
+                            
+                            <img src="	http://demo.snstheme.com/wp/simen/wp-content/uploads/2015/11/3-215x260.jpg" alt="" class="feature-bar__box-img">
+                            <div class="feature-bar__box-atc">
+                                <i class="fas fa-shopping-cart feature-bar__box-atc-icon"></i>
+                                <span class="feature-bar__box-atc-text">add to cart</span>
+                            </div>
+                            <div class="feature-bar__box-cta">
+                                <i class="fas fa-heart feature-bar__box-cta-icon feature-bar__box-cta-icon--heart"></i>
+                                <i class="fas fa-random feature-bar__box-cta-icon feature-bar__box-cta-icon--random"></i>
+                                <i class="fas fa-eye feature-bar__box-cta-icon feature-bar__box-cta-icon--eye"></i>
+                            </div>
+                        </div>
+
+                        <div class="feature-bar__box-cta-icon--heart-text">Add to Wishlist</div>
+                        <div class="feature-bar__box-cta-icon--random-text">Compare</div>
+                        <div class="feature-bar__box-cta-icon--eye-text">Quickview</div>
+
+                        <h4 class="feature-bar__item-name">Modular Modern</h4>
+
+                        <div class="feature-bar__item-price">
+                            
+                            <span class="feature-bar__item-price--now">$ 14.00</span>
+                        </div>
+
+                        <div class="feature-bar__item-stars">
+                            <i class="far fa-star star-icon"></i>
+                            <i class="far fa-star star-icon"></i>
+                            <i class="far fa-star star-icon"></i>
+                            <i class="far fa-star star-icon"></i>
+                            <i class="far fa-star star-icon"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row feature-bar__btn ">
+                <button class="feature-bar__btn-loadmore mb-medium">Load more items</button>
+            </div>
+        </section>
+
+        <section class=" banner">
+            <div class="row banner__container">
+                <img src="	http://demo.snstheme.com/wp/simen/wp-content/uploads/2011/05/call-to-action.jpg" alt="" class="col-1-of-2 banner__img">
+                <div class="banner__detail col-1-of-2">
+                    <h2 class="banner__title">Alex - Stool</h2>
+                    <h4 class="banner__status">new products</h4>
+                    <span class="banner__des mb-tiny">Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,</span>
+                    <button class="banner__btn">buy now</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="suggest">
+            
+        </section>
+    </main>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
